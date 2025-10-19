@@ -1,0 +1,252 @@
+{
+  "config": "{\"version\":\"5.43\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU04\",\"version\":\"5.43\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU04",
+            "path": "BaseThemes/CY23SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "FUNDO_TITANIC8145925010150461.png",
+            "path": "FUNDO_TITANIC8145925010150461.png",
+            "type": 100
+          },
+          {
+            "name": "capa_totanic8188645932861114.png",
+            "path": "capa_totanic8188645932861114.png",
+            "type": 100
+          },
+          {
+            "name": "casa7423487648953537.png",
+            "path": "casa7423487648953537.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'FUNDO_TITANIC.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"FUNDO_TITANIC8145925010150461.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"205L\"}}}}}]}}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"072c25c57a400c5025a7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":13.527080581241743,\"y\":427.7939233817701,\"z\":5000,\"width\":177.54293262879787,\"height\":148.79788639365918,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Tickets Classe :3  \",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"Sobreviventes : \",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}},{\"value\":{\"propertyIdentifier\":{\"objectName\":\"values\",\"propertyName\":\"expr\"},\"selector\":{\"id\":\"Valor\"}},\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"Passageiros : \",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}},{\"value\":{\"propertyIdentifier\":{\"objectName\":\"values\",\"propertyName\":\"expr\"},\"selector\":{\"id\":\"Valor 2\"}},\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"Taxa de sobrevivencia ;\",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}},{\"value\":{\"propertyIdentifier\":{\"objectName\":\"values\",\"propertyName\":\"expr\"},\"selector\":{\"id\":\"Valor 3\"}},\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}]}]}}],\"values\":[{\"properties\":{\"expr\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes Pc 3\"},\"Name\":\"_Medidas.Sobreviventes Pc 3\"}]}}},\"Property\":\"_Medidas.Sobreviventes Pc 3\"}},\"Function\":3},\"Annotations\":{\"NaturalLanguage\":{\"version\":1,\"kind\":\"NaturalLanguage\",\"annotation\":{\"name\":\"Valor\",\"utterance\":\"sobreviventes pc 3\"}}}}}},\"selector\":{\"id\":\"Valor\"}},{\"properties\":{\"expr\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Passageiros 3 Pc\"},\"Name\":\"_Medidas.Passageiros 3 Pc\"}]}}},\"Property\":\"_Medidas.Passageiros 3 Pc\"}},\"Function\":3},\"Annotations\":{\"NaturalLanguage\":{\"version\":1,\"kind\":\"NaturalLanguage\",\"annotation\":{\"name\":\"Valor 2\",\"utterance\":\"passageiros 3 pc\"}}}}}},\"selector\":{\"id\":\"Valor 2\"}},{\"properties\":{\"expr\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"taxa de sobrevivencia 3 pc\"},\"Name\":\"_Medidas.taxa de sobrevivencia 3 pc\"}]}}},\"Property\":\"_Medidas.taxa de sobrevivencia 3 pc\"}},\"Function\":3},\"Annotations\":{\"NaturalLanguage\":{\"version\":1,\"kind\":\"NaturalLanguage\",\"annotation\":{\"name\":\"Valor 3\",\"utterance\":\"taxa de sobrevivencia 3 pc\"}}}}},\"formatString\":{\"expr\":{\"Literal\":{\"Value\":\"'0.00 %;-0.00 %;0.00 %'\"}}}},\"selector\":{\"id\":\"Valor 3\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 148.80,
+          "width": 177.54,
+          "x": 13.53,
+          "y": 427.79,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"2852cf945002a69c04e8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":984.3569553805773,\"y\":137.74278215223097,\"z\":0,\"width\":270.4461942257218,\"height\":191.49606299212599,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Medidas.total_passageiros\"}],\"Category\":[{\"queryRef\":\"dPassageiros.sex\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dPassageiros\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"},\"Name\":\"_Medidas.total_passageiros\",\"NativeReferenceName\":\"total_passageiros\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"sex\"},\"Name\":\"dPassageiros.sex\",\"NativeReferenceName\":\"sex\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dPassageiros\"}},\"Property\":\"sex\"}},\"Right\":{\"Literal\":{\"Value\":\"'male'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FEDC97'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dPassageiros\"}},\"Property\":\"sex\"}},\"Right\":{\"Literal\":{\"Value\":\"'female'\"}}}}}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Passageiros por sexo'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 191.50,
+          "width": 270.45,
+          "x": 984.36,
+          "y": 137.74,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"30c6a9ae05b072a192bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":573.2100396301189,\"y\":145.41611624834874,\"z\":9000,\"width\":387.2126816380449,\"height\":182.61558784676353,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"ribbonChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fPassageiros (2).pclass\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.Sobreviventes\"},{\"queryRef\":\"_Medidas.Mortos\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fPassageiros (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"pclass\"},\"Name\":\"fPassageiros (2).pclass\",\"NativeReferenceName\":\"pclass\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes\"},\"Name\":\"_Medidas.Sobreviventes\",\"NativeReferenceName\":\"Sobreviventes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Mortos\"},\"Name\":\"_Medidas.Mortos\",\"NativeReferenceName\":\"Mortos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}}},\"selector\":{\"metadata\":\"_Medidas.Mortos\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FEDC97'\"}}}}}},\"selector\":{\"metadata\":\"_Medidas.Sobreviventes\"}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sobreviventes x Mortos por Classe'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 182.62,
+          "width": 387.21,
+          "x": 573.21,
+          "y": 145.42,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"3c83364c0b2a60d04ed4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":218.3727034120735,\"y\":137.74278215223097,\"z\":2000,\"width\":337.6377952755905,\"height\":191.49606299212599,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fPassageiros (2).Faixa etaria\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.total_passageiros\"}],\"Series\":[{\"queryRef\":\"dPassageiros.sex\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fPassageiros (2)\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dPassageiros\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Faixa etaria\"},\"Name\":\"fPassageiros (2).Faixa etaria\",\"NativeReferenceName\":\"Faixa etaria\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"},\"Name\":\"_Medidas.total_passageiros\",\"NativeReferenceName\":\"total_passageiros\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"sex\"},\"Name\":\"dPassageiros.sex\",\"NativeReferenceName\":\"sex\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"totals\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dPassageiros\"}},\"Property\":\"sex\"}},\"Right\":{\"Literal\":{\"Value\":\"'male'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FEDC97'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dPassageiros\"}},\"Property\":\"sex\"}},\"Right\":{\"Literal\":{\"Value\":\"'female'\"}}}}}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Passageiros por Idade'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filterdfbb18e21b8465a4e027\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fPassageiros (2)\"}},\"Property\":\"Faixa etaria\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fPassageiros (2)\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Faixa etaria\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 191.50,
+          "width": 337.64,
+          "x": 218.37,
+          "y": 137.74,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"559b8ca0a91817078be5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":984.0951122853368,\"y\":350.0132100396301,\"z\":7000,\"width\":270.54161162483484,\"height\":353.39498018494055,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Y\":[{\"queryRef\":\"_Medidas.total_passageiros\"}],\"Category\":[{\"queryRef\":\"fPassageiros (2).pclass\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fPassageiros (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"},\"Name\":\"_Medidas.total_passageiros\",\"NativeReferenceName\":\"total_passageiros\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"pclass\"},\"Name\":\"fPassageiros (2).pclass\",\"NativeReferenceName\":\"pclass\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FEDC97'\"}}}}}}}],\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"categoryAxis\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}}}}],\"percentBarLabel\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Passageiros por Classe'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 353.39,
+          "width": 270.54,
+          "x": 984.10,
+          "y": 350.01,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"5ac5fe62ee0999966940\",\"layouts\":[{\"id\":0,\"position\":{\"x\":231.81102362204723,\"y\":359.4750656167979,\"z\":6000,\"width\":307.4015748031496,\"height\":344.3569553805774,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fPassageiros (2).Faixa etaria\",\"active\":true}],\"Series\":[{\"queryRef\":\"dPassageiros.sex\"}],\"Y\":[{\"queryRef\":\"_Medidas.Sobreviventes\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fPassageiros (2)\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dPassageiros\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Faixa etaria\"},\"Name\":\"fPassageiros (2).Faixa etaria\",\"NativeReferenceName\":\"Faixa etaria\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"sex\"},\"Name\":\"dPassageiros.sex\",\"NativeReferenceName\":\"sex\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes\"},\"Name\":\"_Medidas.Sobreviventes\",\"NativeReferenceName\":\"Sobreviventes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"totals\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dPassageiros\"}},\"Property\":\"sex\"}},\"Right\":{\"Literal\":{\"Value\":\"'male'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FEDC97'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dPassageiros\"}},\"Property\":\"sex\"}},\"Right\":{\"Literal\":{\"Value\":\"'female'\"}}}}}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sobreviventes por Idade'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filterdfbb18e21b8465a4e027\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fPassageiros (2)\"}},\"Property\":\"Faixa etaria\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fPassageiros (2)\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Faixa etaria\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 344.36,
+          "width": 307.40,
+          "x": 231.81,
+          "y": 359.48,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"75033060996ab96c6d48\",\"layouts\":[{\"id\":0,\"position\":{\"x\":13.527080581241743,\"y\":285.75957727873185,\"z\":4000,\"width\":177.54293262879787,\"height\":157.25231175693526,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Tickets Classe :2 \",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"Sobreviventes : \",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}},{\"value\":{\"propertyIdentifier\":{\"objectName\":\"values\",\"propertyName\":\"expr\"},\"selector\":{\"id\":\"Valor\"}},\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"Passageiros : \",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}},{\"value\":{\"propertyIdentifier\":{\"objectName\":\"values\",\"propertyName\":\"expr\"},\"selector\":{\"id\":\"Valor 2\"}},\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"Taxa de sobrevivencia ;\",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}},{\"value\":{\"propertyIdentifier\":{\"objectName\":\"values\",\"propertyName\":\"expr\"},\"selector\":{\"id\":\"Valor 3\"}},\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}]}]}}],\"values\":[{\"properties\":{\"expr\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"taxa de sobrevivencia 2 pc\"},\"Name\":\"_Medidas.taxa de sobrevivencia 2 pc\"}]}}},\"Property\":\"_Medidas.taxa de sobrevivencia 2 pc\"}},\"Function\":3},\"Annotations\":{\"NaturalLanguage\":{\"version\":1,\"kind\":\"NaturalLanguage\",\"annotation\":{\"name\":\"Valor 3\",\"utterance\":\"taxa de sobrevivencia 2 pc\"}}}}},\"formatString\":{\"expr\":{\"Literal\":{\"Value\":\"'0.00 %;-0.00 %;0.00 %'\"}}}},\"selector\":{\"id\":\"Valor 3\"}},{\"properties\":{\"expr\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Passageiros 2 Pc\"},\"Name\":\"_Medidas.Passageiros 2 Pc\"}]}}},\"Property\":\"_Medidas.Passageiros 2 Pc\"}},\"Function\":3},\"Annotations\":{\"NaturalLanguage\":{\"version\":1,\"kind\":\"NaturalLanguage\",\"annotation\":{\"name\":\"Valor 2\",\"utterance\":\"passageiros 2 pc\"}}}}}},\"selector\":{\"id\":\"Valor 2\"}},{\"properties\":{\"expr\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes Pc 2\"},\"Name\":\"_Medidas.Sobreviventes Pc 2\"}]}}},\"Property\":\"_Medidas.Sobreviventes Pc 2\"}},\"Function\":3},\"Annotations\":{\"NaturalLanguage\":{\"version\":1,\"kind\":\"NaturalLanguage\",\"annotation\":{\"name\":\"Valor\",\"utterance\":\"sobreviventes pc 2\"}}}}}},\"selector\":{\"id\":\"Valor\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 157.25,
+          "width": 177.54,
+          "x": 13.53,
+          "y": 285.76,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"774150f8bd070e109104\",\"layouts\":[{\"id\":0,\"position\":{\"x\":13.527080581241743,\"y\":136.96169088507264,\"z\":3000,\"width\":177.54293262879787,\"height\":148.79788639365918,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Tickets Classe :1  \",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"Sobreviventes : \",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}},{\"value\":{\"propertyIdentifier\":{\"objectName\":\"values\",\"propertyName\":\"expr\"},\"selector\":{\"id\":\"Valor\"}},\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"Passageiros : \",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}},{\"value\":{\"propertyIdentifier\":{\"objectName\":\"values\",\"propertyName\":\"expr\"},\"selector\":{\"id\":\"Valor 2\"}},\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"Taxa de sobrevivencia ;\",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}},{\"value\":{\"propertyIdentifier\":{\"objectName\":\"values\",\"propertyName\":\"expr\"},\"selector\":{\"id\":\"Valor 3\"}},\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}]}]}}],\"values\":[{\"properties\":{\"expr\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes Pc 1\"},\"Name\":\"_Medidas.Sobreviventes Pc 1\"}]}}},\"Property\":\"_Medidas.Sobreviventes Pc 1\"}},\"Function\":3},\"Annotations\":{\"NaturalLanguage\":{\"version\":1,\"kind\":\"NaturalLanguage\",\"annotation\":{\"name\":\"Valor\",\"utterance\":\"sobreviventes pc 1\"}}}}}},\"selector\":{\"id\":\"Valor\"}},{\"properties\":{\"expr\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Passageiros 1 Pc\"},\"Name\":\"_Medidas.Passageiros 1 Pc\"}]}}},\"Property\":\"_Medidas.Passageiros 1 Pc\"}},\"Function\":3},\"Annotations\":{\"NaturalLanguage\":{\"version\":1,\"kind\":\"NaturalLanguage\",\"annotation\":{\"name\":\"Valor 2\",\"utterance\":\"passageiros 1 pc\"}}}}}},\"selector\":{\"id\":\"Valor 2\"}},{\"properties\":{\"expr\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"taxa de sobrevivencia 1 pc\"},\"Name\":\"_Medidas.taxa de sobrevivencia 1 pc\"}]}}},\"Property\":\"_Medidas.taxa de sobrevivencia 1 pc\"}},\"Function\":3},\"Annotations\":{\"NaturalLanguage\":{\"version\":1,\"kind\":\"NaturalLanguage\",\"annotation\":{\"name\":\"Valor 3\",\"utterance\":\"taxa de sobrevivencia 1 pc\"}}}}},\"formatString\":{\"expr\":{\"Literal\":{\"Value\":\"'0.00 %;-0.00 %;0.00 %'\"}}}},\"selector\":{\"id\":\"Valor 3\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 148.80,
+          "width": 177.54,
+          "x": 13.53,
+          "y": 136.96,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"93640f9db05d0043d094\",\"layouts\":[{\"id\":0,\"position\":{\"x\":574.488188976378,\"y\":540.8923884514436,\"z\":1000,\"width\":386.3517060367454,\"height\":162.93963254593174,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.total_passageiros\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"},\"Name\":\"_Medidas.total_passageiros\",\"NativeReferenceName\":\"Passageiros\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"}}}]},\"columnProperties\":{\"_Medidas.total_passageiros\":{\"displayName\":\"Passageiros\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 162.94,
+          "width": 386.35,
+          "x": 574.49,
+          "y": 540.89,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"d168643705278070cc5a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1188.6922060766183,\"y\":0,\"z\":8000,\"width\":91.30779392338177,\"height\":71.01717305151915,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"casa7423487648953537.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection672f2cd3107175b48bbe'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 71.02,
+          "width": 91.31,
+          "x": 1188.69,
+          "y": 0.00,
+          "z": 8000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Página 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection28a86e38e6000c81653a",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"015bafeee807531446a9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":290.6036745406824,\"y\":16.79790026246719,\"z\":1000,\"width\":280.5249343832021,\"height\":149.501312335958}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.Sobreviventes\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes\"},\"Name\":\"_Medidas.Sobreviventes\",\"NativeReferenceName\":\"Sobreviventes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 149.50,
+          "width": 280.52,
+          "x": 290.60,
+          "y": 16.80,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c00370537b1a43470670\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":280.5249343832021,\"height\":136.06299212598424}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.total_passageiros\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"},\"Name\":\"_Medidas.total_passageiros\",\"NativeReferenceName\":\"total_passageiros\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 136.06,
+          "width": 280.52,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f5d97666963605e78a3a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":530,\"width\":281,\"height\":150,\"z\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.Sobreviventes Pc 1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes Pc 1\"},\"Name\":\"_Medidas.Sobreviventes Pc 1\",\"NativeReferenceName\":\"Sobreviventes Pc 1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes Pc 1\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 281.00,
+          "x": 0.00,
+          "y": 530.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"fef58fd81423dd28390d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":196.53543307086613,\"z\":2000,\"width\":280.5249343832021,\"height\":299.002624671916}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dPassageiros.sex\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.total_passageiros\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dPassageiros\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"sex\"},\"Name\":\"dPassageiros.sex\",\"NativeReferenceName\":\"sex\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"},\"Name\":\"_Medidas.total_passageiros\",\"NativeReferenceName\":\"total_passageiros\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 299.00,
+          "width": 280.52,
+          "x": 640.00,
+          "y": 196.54,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'capa totanic.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"capa_totanic8188645932861114.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Home",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection672f2cd3107175b48bbe",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"04b280471802de7624e8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":70.55118110236221,\"y\":456.9028871391076,\"z\":0,\"width\":184.7769028871391,\"height\":40.31496062992126}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Iniciar Analise'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#E3AF35'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.31,
+          "width": 184.78,
+          "x": 70.55,
+          "y": 456.90,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"3c359655731e72562125\",\"layouts\":[{\"id\":0,\"position\":{\"x\":381.31233595800524,\"y\":641.6797900262467,\"z\":2000,\"width\":156.2204724409449,\"height\":78.9501312335958}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.Sobreviventes\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes\"},\"Name\":\"_Medidas.Sobreviventes\",\"NativeReferenceName\":\"Sobreviventes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Sobreviventes\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 78.95,
+          "width": 156.22,
+          "x": 381.31,
+          "y": 641.68,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"409673bdbba8b90bb2d7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":641.6797900262467,\"z\":3000,\"width\":162.93963254593174,\"height\":78.9501312335958}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.total_passageiros\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"},\"Name\":\"_Medidas.total_passageiros\",\"NativeReferenceName\":\"Passageiros\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"total_passageiros\"}}}]},\"columnProperties\":{\"_Medidas.total_passageiros\":{\"displayName\":\"Passageiros\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 78.95,
+          "width": 162.94,
+          "x": 0.00,
+          "y": 641.68,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"be5d3fd32cb40dc5ea00\",\"layouts\":[{\"id\":0,\"position\":{\"x\":211.6535433070866,\"y\":641.6797900262467,\"z\":1000,\"width\":144.46194225721786,\"height\":78.9501312335958}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.Mortos\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Mortos\"},\"Name\":\"_Medidas.Mortos\",\"NativeReferenceName\":\"Mortos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Mortos\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 78.95,
+          "width": 144.46,
+          "x": 211.65,
+          "y": 641.68,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"ca062e4d0acb034475e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":571.1286089238845,\"y\":641.6797900262467,\"z\":4000,\"width\":173.01837270341207,\"height\":78.9501312335958}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.Portecetual de mortos\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Portecetual de mortos\"},\"Name\":\"_Medidas.Portecetual de mortos\",\"NativeReferenceName\":\"Portecetual de mortos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Portecetual de mortos\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 78.95,
+          "width": 173.02,
+          "x": 571.13,
+          "y": 641.68,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
