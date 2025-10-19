@@ -1,0 +1,816 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"dPassageiros\",\"fPassageiros (2)\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.124.1052.0 (23.12)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "pt-BR",
+    "cultures": [
+      {
+        "name": "pt-BR",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Entities": {
+              "table_medidas.total_passageiros": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Medidas",
+                    "ConceptualProperty": "total_passageiros"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Passageiros": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "queryGroups": [
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ],
+        "description": "Erros nas consultas que foram carregadas em 22/04/2023 14:28:29.",
+        "folder": "Erros na Consulta - 22/04/2023 14:28:29"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "8fce86c7-0864-4574-857b-bc096091d5c8",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "ticket",
+        "fromTable": "fPassageiros (2)",
+        "toCardinality": "many",
+        "toColumn": "ticket",
+        "toTable": "dPassageiros"
+      }
+    ],
+    "sourceQueryCulture": "pt-BR",
+    "tables": [
+      {
+        "name": "dPassageiros",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4765c177-af69-4f9b-96ff-79033c2fad3f",
+            "sourceColumn": "name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sex",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "af432ae8-3b8a-4e66-95a7-e46ed31e95e0",
+            "sourceColumn": "sex",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ticket",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "94fbed87-3501-44b2-a37c-17d2d00ba8c7",
+            "sourceColumn": "ticket",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cabin",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d1952533-cbb9-49cd-a813-af99365546d0",
+            "sourceColumn": "cabin",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "embarked",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fdb7d0e4-2fb1-40ed-a814-d1a12a091803",
+            "sourceColumn": "embarked",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "home.dest",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "85092e11-dcf4-48cf-988d-bed81d71b893",
+            "sourceColumn": "home.dest",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "ad02a747-f444-4987-ae09-a240c2e554a6",
+        "partitions": [
+          {
+            "name": "dPassageiros-bebf5c6a-928d-422c-89c7-dfd3fedaf23b",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Excel.Workbook(File.Contents(\"C:\\Users\\Robespierre\\Documents\\DASHBOARDS\\base de dados\\Titanic\\titanic.xls\"), null, true),",
+                "    Worksheet = Fonte{[Name=\"Worksheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Worksheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"pclass\", Int64.Type}, {\"survived\", Int64.Type}, {\"name\", type text}, {\"sex\", type text}, {\"age\", type number}, {\"sibsp\", Int64.Type}, {\"parch\", Int64.Type}, {\"ticket\", type text}, {\"fare\", type number}, {\"cabin\", type text}, {\"embarked\", type text}, {\"boat\", type text}, {\"body\", Int64.Type}, {\"home.dest\", type text}}),",
+                "    #\"Coluna Condicional Adicionada\" = Table.AddColumn(#\"Tipo Alterado\", \"Personalizar\", each if [age] <= 10 then \"0-10\" else if [age] <= 20 then \"11-20\" else if [age] <= 30 then \"21-30\" else if [age] >= 40 then \"31-40\" else if [age] <= 50 then \"41-50\" else if [age] <= 60 then \"51-60\" else if [age] > 61 then \"mias de 61\" else null),",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Coluna Condicional Adicionada\",{{\"Personalizar\", \"Faixa etaria\"}}),",
+                "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Colunas Renomeadas\",{\"name\", \"sex\", \"ticket\", \"cabin\", \"embarked\", \"home.dest\"})",
+                "in",
+                "    #\"Outras Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_f01f0268-38e4-4185-8314-7ddc7f6bddfc",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "13aa5cf5-8d47-4182-806a-03ec89a9fdf1",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "95e00ef4-6888-4954-94d3-e3e285da30b2",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "4eefb39c-53e4-468b-b7dc-4d96b9a58909",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "157de644-4d4d-4ed2-9559-29116d28d746",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "1573f9eb-2ab9-4647-b8bb-a12280eac1ac",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "2f6627c0-2eb8-4365-aff0-e8bcd3b403b8",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "ec228eaf-f7aa-47d2-af77-259499719f82",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "2f7422b6-a47d-4ee3-96bc-d147e5962d53",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "c86ce9d7-a7d9-453e-9e06-7cd488d131ec",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "e698e124-e3f3-4406-8391-f10b086d3b52",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "2e19209e-79f3-440e-a095-9664cdffba7a",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "44a573dd-3525-475f-9b41-437b8ea9d174"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "1f3d25fa-307b-46ce-9239-8f0faf44fef6",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_f01f0268-38e4-4185-8314-7ddc7f6bddfc-c51e253a-efd6-4e7f-95ec-209a7c05aee5",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "_Medidas",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "3e389946fd40483eb34572974e73e0ec"
+          },
+          {
+            "name": "436ba87b-9c83-4389-a31b-ebd06a36be98",
+            "value": "{\"Expression\":\"\"}"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "aeaec03e-7239-4795-bd1a-5cba65d9292b",
+            "sourceColumn": "[Column]",
+            "summarizeBy": "sum",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "0af737b3-b28b-4a3d-8aac-9e41019ed467",
+        "measures": [
+          {
+            "name": "Sobreviventes",
+            "expression": "SUM('fPassageiros (2)'[survived])",
+            "formatString": "0",
+            "lineageTag": "05a4e262-00c1-4ede-93c0-30cd35efac38"
+          },
+          {
+            "name": "Sobreviventes Pc 1",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "  [Sobreviventes],",
+              "  FILTER(",
+              "    SUMMARIZE(",
+              "        'fPassageiros (2)',",
+              "        'fPassageiros (2)'[pclass]",
+              "    ),",
+              "      'fPassageiros (2)'[pclass] = \"1\" ",
+              "      ",
+              "   ))",
+              " //CALCULATE(",
+              " //    [Sobreviventes],",
+              "   // count('fPassageiros (2)'[pclass]),",
+              " //   FILTER('fPassageiros (2)',",
+              " //   'fPassageiros (2)'[pclass]= \"1\"",
+              "//    ))",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "7df6a1db-546d-4d75-b134-df60e88c8755"
+          },
+          {
+            "name": "total_passageiros",
+            "expression": "COUNTROWS(dPassageiros)",
+            "formatString": "0",
+            "lineageTag": "49bb7eca-a123-4d8b-8933-2ec341848bc4"
+          },
+          {
+            "name": "Passageiros 1 Pc",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "  [total_passageiros],",
+              "  FILTER(",
+              "    SUMMARIZE(",
+              "        'fPassageiros (2)',",
+              "        'fPassageiros (2)'[pclass]",
+              "    ),",
+              "      'fPassageiros (2)'[pclass] = \"1\" ",
+              "      ",
+              "   ))"
+            ],
+            "formatString": "0",
+            "lineageTag": "be0cf692-e50d-4d58-9036-7e048995cec9"
+          },
+          {
+            "name": "taxa de sobrevivencia 1 pc",
+            "expression": "DIVIDE([Sobreviventes Pc 1],[Passageiros 1 Pc])",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "ccfa00b4-e7a3-4f5a-be52-b813257d4914"
+          },
+          {
+            "name": "Sobreviventes Pc 2",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "  [Sobreviventes],",
+              "  FILTER(",
+              "    SUMMARIZE(",
+              "        'fPassageiros (2)',",
+              "        'fPassageiros (2)'[pclass]",
+              "    ),",
+              "      'fPassageiros (2)'[pclass] = \"2\" ",
+              "      ",
+              "   ))"
+            ],
+            "formatString": "0",
+            "lineageTag": "5d4da4aa-039d-4d7c-8c91-785b2fc02afe"
+          },
+          {
+            "name": "Sobreviventes Pc 3",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "  [Sobreviventes],",
+              "  FILTER(",
+              "    SUMMARIZE(",
+              "        'fPassageiros (2)',",
+              "        'fPassageiros (2)'[pclass]",
+              "    ),",
+              "      'fPassageiros (2)'[pclass] = \"3\" ",
+              "      ",
+              "   ))"
+            ],
+            "formatString": "0",
+            "lineageTag": "ed7da6cf-7943-4ef4-9c09-f9eb02e07d3a"
+          },
+          {
+            "name": "Passageiros 2 Pc",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "  [total_passageiros],",
+              "  FILTER(",
+              "    SUMMARIZE(",
+              "        'fPassageiros (2)',",
+              "        'fPassageiros (2)'[pclass]",
+              "    ),",
+              "      'fPassageiros (2)'[pclass] = \"2\" ",
+              "      ",
+              "   ))"
+            ],
+            "formatString": "0",
+            "lineageTag": "5da4ecd3-f0d6-4307-aa34-cc366d492af1"
+          },
+          {
+            "name": "Passageiros 3 Pc",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "  [total_passageiros],",
+              "  FILTER(",
+              "    SUMMARIZE(",
+              "        'fPassageiros (2)',",
+              "        'fPassageiros (2)'[pclass]",
+              "    ),",
+              "      'fPassageiros (2)'[pclass] = \"3\" ",
+              "      ",
+              "   ))"
+            ],
+            "formatString": "0",
+            "lineageTag": "35961cd2-7671-4325-8e3b-f52e54670c5a"
+          },
+          {
+            "name": "taxa de sobrevivencia 2 pc",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "DIVIDE([Sobreviventes Pc 2],[Passageiros 2 Pc])",
+            "lineageTag": "b99929b7-1190-4c08-87e9-3f9d185e0b67"
+          },
+          {
+            "name": "taxa de sobrevivencia 3 pc",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "DIVIDE([Sobreviventes Pc 3],[Passageiros 3 Pc])",
+            "lineageTag": "13b34f59-5e49-4939-9c41-05985cf06f3d"
+          },
+          {
+            "name": "Barcos",
+            "expression": "DISTINCTCOUNT('fPassageiros (2)'[boat])",
+            "formatString": "0",
+            "lineageTag": "257924a3-5508-4033-88ec-7a0fd062f013"
+          },
+          {
+            "name": "Mortos",
+            "expression": "[total_passageiros] - [Sobreviventes]",
+            "formatString": "0",
+            "lineageTag": "7bae1c1c-8caa-4b80-9dfa-96956a5a263b"
+          },
+          {
+            "name": "Portecetual de mortos",
+            "expression": "DIVIDE([Mortos],[total_passageiros])",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "f772a276-6ccf-4bce-ac3d-1966f8153bfb"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_Medidas-09422b13-425d-453e-b2b3-5e271ad58b08",
+            "mode": "import",
+            "source": {
+              "expression": "Row(\"Column\", BLANK())",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "fPassageiros (2)",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "pclass",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2cd8f0f0-b263-49c7-997f-b8a404270586",
+            "sourceColumn": "pclass",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "survived",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5f2715bf-b78d-4044-a5f2-b5e007bac53b",
+            "sourceColumn": "survived",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "e664e9fb-a014-4228-bb33-97cafc7e795e",
+            "sourceColumn": "age",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "sibsp",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "95ac8588-087c-48c7-ae04-655386ce4086",
+            "sourceColumn": "sibsp",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "parch",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6cccd547-bb6a-44d5-88b5-23d7d82cef78",
+            "sourceColumn": "parch",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ticket",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "eebc26a6-67b8-4896-b946-7447885d4eff",
+            "sourceColumn": "ticket",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fare",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "52914bff-f1a6-40c0-a1ee-cbbfdeaa6190",
+            "sourceColumn": "fare",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "boat",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e29720a8-0863-4668-a995-ddd40da08dc8",
+            "sourceColumn": "boat",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "body",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d636ab7d-2f51-490c-b443-17c5d66e032b",
+            "sourceColumn": "body",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Faixa etaria",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "529e40ab-129d-490b-85b5-ef663524b7d1",
+            "sourceColumn": "Faixa etaria",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "391c1994-8f1a-4442-94a2-e2b57a6ba9f3",
+        "partitions": [
+          {
+            "name": "fPassageiros (2)-be378588-6f67-458d-af82-08c08c553dbe",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Excel.Workbook(File.Contents(\"C:\\Users\\Robespierre\\Documents\\DASHBOARDS\\base de dados\\Titanic\\titanic.xls\"), null, true),",
+                "    Worksheet = Fonte{[Name=\"Worksheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Worksheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"pclass\", Int64.Type}, {\"survived\", Int64.Type}, {\"name\", type text}, {\"sex\", type text}, {\"age\", type number}, {\"sibsp\", Int64.Type}, {\"parch\", Int64.Type}, {\"ticket\", type text}, {\"fare\", type number}, {\"cabin\", type text}, {\"embarked\", type text}, {\"boat\", type text}, {\"body\", Int64.Type}, {\"home.dest\", type text}}),",
+                "    #\"Coluna Condicional Adicionada\" = Table.AddColumn(#\"Tipo Alterado\", \"Personalizar\", each if [age] <= 10 then \"0-10\" else if [age] <= 20 then \"11-20\" else if [age] <= 30 then \"21-30\" else if [age] >= 40 then \"31-40\" else if [age] <= 50 then \"41-50\" else if [age] <= 60 then \"51-60\" else if [age] > 61 then \"mias de 61\" else null),",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Coluna Condicional Adicionada\",{{\"Personalizar\", \"Faixa etaria\"}}),",
+                "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Colunas Renomeadas\",{\"pclass\", \"survived\", \"age\", \"sibsp\", \"parch\", \"ticket\", \"fare\", \"boat\", \"body\", \"Faixa etaria\"}),",
+                "    #\"Tipo Alterado1\" = Table.TransformColumnTypes(#\"Outras Colunas Removidas\",{{\"pclass\", type text}})",
+                "in",
+                "    #\"Tipo Alterado1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
